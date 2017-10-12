@@ -67,9 +67,14 @@
 		37A8FC6C1F891D6B0097F475 /* String+LocalizeTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8FC691F891D6B0097F475 /* String+LocalizeTableName.swift */; };
 		37A8FC6D1F891D6B0097F475 /* String+LocalizeBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8FC6A1F891D6B0097F475 /* String+LocalizeBundle.swift */; };
 		37A8FC6E1F891D6B0097F475 /* String+LocalizedBundleTableName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8FC6B1F891D6B0097F475 /* String+LocalizedBundleTableName.swift */; };
+		37A8FC701F8B1B660097F475 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8FC6F1F8B1B660097F475 /* BaseViewController.swift */; };
 		37CCB7C21F877961003DE68D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CCB7B31F877961003DE68D /* AppDelegate.swift */; };
 		37CCB7C61F877961003DE68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CCB7BB1F877961003DE68D /* Assets.xcassets */; };
 		37CCB7C71F877961003DE68D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CCB7C11F877961003DE68D /* ViewController.swift */; };
+		37DC693D1F8F2A57000FB64A /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC693C1F8F2A57000FB64A /* LaunchScreenViewController.swift */; };
+		37DC693F1F8F4324000FB64A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DC693E1F8F4324000FB64A /* Colors.xcassets */; };
+		37DC69411F8F5739000FB64A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC69401F8F5739000FB64A /* BaseViewModel.swift */; };
+		37DC69431F8F5787000FB64A /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */; };
 		6048647CC0FECAA60A2916CD /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F9D85706B13B24B7979980 /* Pods_Template.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,11 +140,16 @@
 		37A8FC691F891D6B0097F475 /* String+LocalizeTableName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizeTableName.swift"; sourceTree = "<group>"; };
 		37A8FC6A1F891D6B0097F475 /* String+LocalizeBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizeBundle.swift"; sourceTree = "<group>"; };
 		37A8FC6B1F891D6B0097F475 /* String+LocalizedBundleTableName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedBundleTableName.swift"; sourceTree = "<group>"; };
+		37A8FC6F1F8B1B660097F475 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		37CCB79D1F8778CB003DE68D /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CCB7B31F877961003DE68D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37CCB7B41F877961003DE68D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37CCB7BB1F877961003DE68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CCB7C11F877961003DE68D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37DC693C1F8F2A57000FB64A /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		37DC693E1F8F4324000FB64A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		37DC69401F8F5739000FB64A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		56F9D85706B13B24B7979980 /* Pods_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0C80C7FB36179047FAA7D /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
 		9378D6853DFD54E66D1CF2B9 /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				37125D521F887CD700BD22F1 /* UI */,
+				37A8FC6F1F8B1B660097F475 /* BaseViewController.swift */,
+				37DC69401F8F5739000FB64A /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -168,17 +180,9 @@
 		37125CDF1F8799BE00BD22F1 /* SwifterSwift */ = {
 			isa = PBXGroup;
 			children = (
-				37125CE21F8799BE00BD22F1 /* Sources */,
-			);
-			path = SwifterSwift;
-			sourceTree = "<group>";
-		};
-		37125CE21F8799BE00BD22F1 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
 				37125CE31F8799BE00BD22F1 /* Extensions */,
 			);
-			path = Sources;
+			path = SwifterSwift;
 			sourceTree = "<group>";
 		};
 		37125CE31F8799BE00BD22F1 /* Extensions */ = {
@@ -291,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				37125D531F887D1400BD22F1 /* BaseLabel.swift */,
+				37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				375ABE8E1F877FFA00D0AC94 /* Localizable */,
 				37CCB7B61F877961003DE68D /* Storyboard */,
 				37CCB7BB1F877961003DE68D /* Assets.xcassets */,
+				37DC693E1F8F4324000FB64A /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				37CCB7C11F877961003DE68D /* ViewController.swift */,
+				37DC693C1F8F2A57000FB64A /* LaunchScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -510,6 +517,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DC693F1F8F4324000FB64A /* Colors.xcassets in Resources */,
 				375ABE941F87802200D0AC94 /* Main.storyboard in Resources */,
 				375ABE961F87803700D0AC94 /* LaunchScreen.storyboard in Resources */,
 				375ABE921F877FFA00D0AC94 /* Localizable.strings in Resources */,
@@ -560,11 +568,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Template/Pods-Template-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -585,6 +597,7 @@
 				37125D3C1F8799BE00BD22F1 /* URLRequestExtensions.swift in Sources */,
 				37125D331F8799BE00BD22F1 /* UILabelExtensions.swift in Sources */,
 				37125D3A1F8799BE00BD22F1 /* UserDefaultsExtensions.swift in Sources */,
+				37A8FC701F8B1B660097F475 /* BaseViewController.swift in Sources */,
 				37125D4E1F8799BE00BD22F1 /* CLLocationExtensions.swift in Sources */,
 				37125D381F8799BE00BD22F1 /* UIFontExtensions.swift in Sources */,
 				37125D401F8799BE00BD22F1 /* NSAttributedStringExtensions.swift in Sources */,
@@ -592,6 +605,7 @@
 				37125D431F8799BE00BD22F1 /* FloatExtensions.swift in Sources */,
 				37125D341F8799BE00BD22F1 /* UISwitchExtensions.swift in Sources */,
 				37A8FC6C1F891D6B0097F475 /* String+LocalizeTableName.swift in Sources */,
+				37DC69411F8F5739000FB64A /* BaseViewModel.swift in Sources */,
 				37125D371F8799BE00BD22F1 /* UIAlertControllerExtensions.swift in Sources */,
 				37125D2B1F8799BE00BD22F1 /* UITabBarExtensions.swift in Sources */,
 				37125D271F8799BE00BD22F1 /* UICollectionViewExtensions.swift in Sources */,
@@ -613,6 +627,7 @@
 				37125D3D1F8799BE00BD22F1 /* URLExtensions.swift in Sources */,
 				37A8FC6E1F891D6B0097F475 /* String+LocalizedBundleTableName.swift in Sources */,
 				37125D3F1F8799BE00BD22F1 /* DateExtensions.swift in Sources */,
+				37DC69431F8F5787000FB64A /* BaseTabBarViewController.swift in Sources */,
 				37125D4D1F8799BE00BD22F1 /* CollectionExtensions.swift in Sources */,
 				37125D2D1F8799BE00BD22F1 /* UINavigationBarExtensions.swift in Sources */,
 				37125D471F8799BE00BD22F1 /* BoolExtensions.swift in Sources */,
@@ -628,6 +643,7 @@
 				37125D201F8799BE00BD22F1 /* CGSizeExtensions.swift in Sources */,
 				37125D4A1F8799BE00BD22F1 /* FloatingPointExtensions.swift in Sources */,
 				37125D451F8799BE00BD22F1 /* DictionaryExtensions.swift in Sources */,
+				37DC693D1F8F2A57000FB64A /* LaunchScreenViewController.swift in Sources */,
 				37A8FC681F8900D80097F475 /* LocalizeSwift.swift in Sources */,
 				37125D351F8799BE00BD22F1 /* UIButtonExtensions.swift in Sources */,
 				37125D3B1F8799BE00BD22F1 /* DataExtensions.swift in Sources */,
