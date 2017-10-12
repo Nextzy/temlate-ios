@@ -9,20 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch Screen View Controller-->
         <scene sceneID="FRw-JG-9Mf">
             <objects>
-                <viewController id="Ra5-Mm-Id3" sceneMemberID="viewController">
+                <viewController id="Ra5-Mm-Id3" customClass="LaunchScreenViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4t-1B-Lqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextzy_logo_black_logo_only" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-Gk-eLz">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PdM-0C-mh0"/>
+                                    <constraint firstAttribute="width" constant="240" id="dlP-Zq-eqC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="test"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="arc"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xpA-Gk-eLz" firstAttribute="centerY" secondItem="a4t-1B-Lqe" secondAttribute="centerY" id="0T1-QA-tyT"/>
+                            <constraint firstItem="xpA-Gk-eLz" firstAttribute="centerX" secondItem="a4t-1B-Lqe" secondAttribute="centerX" id="bUy-hP-aIh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DgV-8t-oDf"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrY-UQ-4py" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="201"/>
+            <point key="canvasLocation" x="244" y="200.14992503748127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nextzy_logo_black_logo_only" width="2000" height="518"/>
+    </resources>
 </document>

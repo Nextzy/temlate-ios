@@ -9,20 +9,23 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import Localize_Swift
+import Hero
 class ViewController: UIViewController {
-    @IBOutlet weak var toggleButton: UIButton!
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        toggleButton.rx.tap.asObservable().subscribe { (_) in
-            if Localize.currentLanguage() == "en" {
-                Localize.setCurrentLanguage("th")
-            } else {
-                Localize.setCurrentLanguage("en")
-            }
-            
-        }.disposed(by: disposeBag)
+        setLogo()
+    }
+    
+    func setLogo() {
+        let logo = #imageLiteral(resourceName: "nextzy_logo_black_logo_only")
+        let imageView = UIImageView(image: logo)
+        imageView.isHeroEnabled = true
+        imageView.contentMode = .scaleAspectFit
+        imageView.heroID = "test"
+        imageView.heroModifiers = [.arc]
+        self.navigationItem.titleView = imageView
+
     }
 }
 
