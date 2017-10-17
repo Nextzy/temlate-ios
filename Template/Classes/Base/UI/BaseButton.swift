@@ -1,15 +1,16 @@
+
 //
-//  BaseLabel.swift
+//  BaseButton.swift
 //  Template
 //
-//  Created by Thongpak on 7/10/2560 BE.
+//  Created by Thongpak on 15/10/2560 BE.
 //  Copyright © 2560 nextzy. All rights reserved.
 //
 
 import UIKit
 
-class BaseLabel: UILabel {
-    
+class BaseButton: UIButton {
+
     @IBInspectable var key: String?
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,11 +20,11 @@ class BaseLabel: UILabel {
     deinit {
         removeObserver()
     }
-
+    
     @objc func localizeLabel() {
         if let key = self.key {
-            self.fadeIn(duration: 3, completion: { (_) in
-                self.text = key.localized()
+            self.fadeIn(duration: 2, completion: { (finish) in
+                self.titleLabel?.text = key.localized()
             })
         }
     }
