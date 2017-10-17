@@ -22,9 +22,9 @@ class BaseLabel: UILabel {
 
     @objc func localizeLabel() {
         if let key = self.key {
-            self.fadeIn(duration: 3, completion: { (_) in
-                self.text = key.localized()
-            })
+            self.alpha = 0
+            self.text = key.localized()
+            self.fadeIn()
         }
     }
     

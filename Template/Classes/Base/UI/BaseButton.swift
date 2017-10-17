@@ -21,11 +21,11 @@ class BaseButton: UIButton {
         removeObserver()
     }
     
-    @objc func localizeLabel() {
+    @objc func localizeButton() {
         if let key = self.key {
-            self.fadeIn(duration: 2, completion: { (finish) in
-                self.titleLabel?.text = key.localized()
-            })
+            self.alpha = 0
+            self.titleLabel = key.localized()
+            self.fadeIn()
         }
     }
     

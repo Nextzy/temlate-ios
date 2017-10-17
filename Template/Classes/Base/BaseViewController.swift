@@ -13,7 +13,6 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addObserver()
-        self.view.backgroundColor = UIColor(named: "")
     }
     
     deinit {
