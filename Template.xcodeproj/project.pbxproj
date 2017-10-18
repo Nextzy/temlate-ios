@@ -29,6 +29,7 @@
 		37DC69431F8F5787000FB64A /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */; };
 		37E5D6421F8F720400985A87 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5D6411F8F720400985A87 /* APIManager.swift */; };
 		6048647CC0FECAA60A2916CD /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F9D85706B13B24B7979980 /* Pods_Template.framework */; };
+		ADAD3568113DCDD1BE909F65 /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372126A91F9744360082CA39 /* Pods_Template.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6048647CC0FECAA60A2916CD /* Pods_Template.framework in Frameworks */,
+				ADAD3568113DCDD1BE909F65 /* Pods_Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
