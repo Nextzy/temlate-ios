@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		37125D531F887D1400BD22F1 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		3717A4061F937BD100113A42 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		372126A91F9744360082CA39 /* Pods_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		375ABE901F877FFA00D0AC94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		375ABE911F877FFA00D0AC94 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		375ABE931F87802200D0AC94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 		8C88D2680C4CAFE62DB4F025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				372126A91F9744360082CA39 /* Pods_Template.framework */,
 				56F9D85706B13B24B7979980 /* Pods_Template.framework */,
 			);
 			name = Frameworks;
@@ -479,6 +481,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Template Dev";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -530,6 +533,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Template;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -542,12 +546,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_NAME_SUFFIX = Develop;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nextzy.Template;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.template;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,12 +566,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_NAME_SUFFIX = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nextzy.Template;
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DPROD";
+				PRODUCT_BUNDLE_IDENTIFIER = com.template;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

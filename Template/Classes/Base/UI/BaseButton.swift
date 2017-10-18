@@ -14,7 +14,7 @@ class BaseButton: UIButton {
     @IBInspectable var key: String?
     override func awakeFromNib() {
         super.awakeFromNib()
-        localizeLabel()
+        localizeButton()
         addObserver()
     }
     deinit {
@@ -24,13 +24,13 @@ class BaseButton: UIButton {
     @objc func localizeButton() {
         if let key = self.key {
             self.alpha = 0
-            self.titleLabel = key.localized()
+            self.titleLabel?.text = key.localized()
             self.fadeIn()
         }
     }
     
     func addObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(BaseLabel.localizeLabel), name: NSNotification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(BaseButton.localizeButton), name: NSNotification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
     }
     
     func removeObserver() {

@@ -7,7 +7,11 @@
 //
 
 import UIKit
-
+#if DEV
+    let isDev = true
+#else
+    let isDev = false
+#endif
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
