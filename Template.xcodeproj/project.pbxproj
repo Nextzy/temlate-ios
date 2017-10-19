@@ -12,6 +12,7 @@
 		375ABE921F877FFA00D0AC94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE8F1F877FFA00D0AC94 /* Localizable.strings */; };
 		375ABE941F87802200D0AC94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE931F87802200D0AC94 /* Main.storyboard */; };
 		375ABE961F87803700D0AC94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE951F87803700D0AC94 /* LaunchScreen.storyboard */; };
+		376734E21F988815002DA4A8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376734E11F988815002DA4A8 /* UIColorExtensions.swift */; };
 		37697A2A1F9474CD00337AD5 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37697A291F9474CD00337AD5 /* RoundView.swift */; };
 		377FE8991F9630C0000B9E93 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377FE8981F9630C0000B9E93 /* UIViewExtension.swift */; };
 		37A8FC651F88FF670097F475 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8FC641F88FF670097F475 /* UIFontExtension.swift */; };
@@ -40,6 +41,7 @@
 		375ABE911F877FFA00D0AC94 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		375ABE931F87802200D0AC94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		375ABE951F87803700D0AC94 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		376734E11F988815002DA4A8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		37697A291F9474CD00337AD5 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		377FE8981F9630C0000B9E93 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		37A8FC641F88FF670097F475 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				37A8FC641F88FF670097F475 /* UIFontExtension.swift */,
 				377FE8981F9630C0000B9E93 /* UIViewExtension.swift */,
+				376734E11F988815002DA4A8 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,33 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				37125C771F8795C100BD22F1 /* Base */,
-				37CCB7BE1F877961003DE68D /* Model */,
-				37CCB7BF1F877961003DE68D /* View */,
-				37CCB7BD1F877961003DE68D /* ViewModel */,
 				37CCB7C01F877961003DE68D /* ViewController */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		37CCB7BD1F877961003DE68D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		37CCB7BE1F877961003DE68D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		37CCB7BF1F877961003DE68D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		37CCB7C01F877961003DE68D /* ViewController */ = {
@@ -378,12 +357,14 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,6 +386,7 @@
 				37DC69411F8F5739000FB64A /* BaseViewModel.swift in Sources */,
 				377FE8991F9630C0000B9E93 /* UIViewExtension.swift in Sources */,
 				37125D541F887D1400BD22F1 /* BaseLabel.swift in Sources */,
+				376734E21F988815002DA4A8 /* UIColorExtensions.swift in Sources */,
 				37CCB7C21F877961003DE68D /* AppDelegate.swift in Sources */,
 				3717A4071F937BD100113A42 /* BaseButton.swift in Sources */,
 				37A8FC6E1F891D6B0097F475 /* String+LocalizedBundleTableName.swift in Sources */,
@@ -552,7 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEV";
 				PRODUCT_BUNDLE_IDENTIFIER = com.template;
@@ -572,7 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DPROD";
 				PRODUCT_BUNDLE_IDENTIFIER = com.template;

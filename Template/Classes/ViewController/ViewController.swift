@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Hero
+
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
 
@@ -20,7 +21,8 @@ class ViewController: UIViewController {
     
     func setLogo() {
         let logo = #imageLiteral(resourceName: "nextzy_logo_black_logo_only")
-        let imageView = UIImageView(image: logo)
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.image = logo
         imageView.isHeroEnabled = true
         imageView.contentMode = .scaleAspectFit
         imageView.heroID = "test"

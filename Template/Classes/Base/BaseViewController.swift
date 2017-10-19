@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -17,6 +17,14 @@ class BaseViewController: UIViewController {
     
     deinit {
         removeObserver()
+    }
+    
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
     }
     
     func addObserver() {
