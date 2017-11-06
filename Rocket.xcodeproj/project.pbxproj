@@ -86,9 +86,9 @@
 		375ABE721F877EB300D0AC94 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				37E5D6401F8F71E000985A87 /* APIManager */,
 				37CD7C211FB026EA00814A6D /* RocketUI */,
 				37CD7C1E1FB0269800814A6D /* LocationManager */,
-				37E5D6401F8F71E000985A87 /* APIManager */,
 				37A8FC661F8900C30097F475 /* Localize */,
 				37A8FC631F88FF4C0097F475 /* Extensions */,
 			);

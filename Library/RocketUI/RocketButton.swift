@@ -15,7 +15,7 @@ class RocketButton: UIButton {
 
     @IBInspectable var key: String?
     @IBInspectable var height: String?
-    @IBInspectable var borderColor: String?
+    @IBInspectable var borderColor: UIColor?
     @IBInspectable var cornerRadius: String?
     
     public var isTextButton: Bool {
@@ -182,8 +182,8 @@ class RocketButton: UIButton {
         }
         self.layer.borderWidth = 1
         if let borderColor = self.borderColor {
-            let color = UIColor(hexString: borderColor)
-            self.layer.borderColor = color!.cgColor
+            let color = borderColor
+            self.layer.borderColor = color.cgColor
         } else {
             self.layer.borderColor  = RocketColor.White.color().cgColor
         }
