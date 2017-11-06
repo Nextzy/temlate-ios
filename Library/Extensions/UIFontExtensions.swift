@@ -29,10 +29,15 @@
         case SemiBold = "SemiBold"
         case BoldItalic = "BoldItalic"
         case Heavy = "Heavy"
+        case AISBold = "75Bd"
+        case AISRegular = "55Regular"
+        case AISMedium = "65Med"
     }
     
     /// EZSwiftExtensions
     public enum FontName: String {
+        case Tahoma = "Tahoma"
+        case HelvethaicaAIS = "DBHelvethaicaAISX"
         case HelveticaNeue
         case Helvetica
         case Futura

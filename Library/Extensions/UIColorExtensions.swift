@@ -31,6 +31,10 @@ import UIKit
             }
         }
         
+        public convenience init(netHex:Int) {
+            self.init(r:CGFloat((netHex >> 16) & 0xff), g:CGFloat((netHex >> 8) & 0xff), b:CGFloat(netHex & 0xff))
+        }
+        
         /// EZSE: init method from Gray value and alpha(default:1)
         public convenience init(gray: CGFloat, alpha: CGFloat = 1) {
             self.init(red: gray/255, green: gray/255, blue: gray/255, alpha: alpha)
