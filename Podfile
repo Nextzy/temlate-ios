@@ -7,5 +7,4 @@ target 'Template' do
     pod 'RxCocoa'
     pod 'Hero', :git => 'https://github.com/lkzhao/Hero.git' ,:tag => '1.0.0-alpha.4'
     pod 'SwiftLint'
-    pod 'SVProgressHUD'
 end

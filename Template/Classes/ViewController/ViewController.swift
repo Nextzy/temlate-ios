@@ -11,11 +11,12 @@ import RxSwift
 import RxCocoa
 import Hero
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setLogo()
     }
     
@@ -28,7 +29,6 @@ class ViewController: UIViewController {
         imageView.heroID = "test"
         imageView.heroModifiers = [.arc]
         self.navigationItem.titleView = imageView
-
     }
 }
 

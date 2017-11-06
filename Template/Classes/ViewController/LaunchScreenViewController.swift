@@ -8,12 +8,12 @@
 
 import UIKit
 
-class LaunchScreenViewController: UIViewController {
+class LaunchScreenViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "qwewqe"
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -21,10 +21,5 @@ class LaunchScreenViewController: UIViewController {
         vc?.modalTransitionStyle = .crossDissolve
         vc?.modalPresentationStyle = .fullScreen
         present(vc!, animated: true, completion: nil)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

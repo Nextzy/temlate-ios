@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ra5-Mm-Id3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +15,11 @@
             <objects>
                 <viewController id="Ra5-Mm-Id3" customClass="LaunchScreenViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a4t-1B-Lqe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nextzy_logo_black_logo_only" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-Gk-eLz">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="67.666666666666686" y="342" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PdM-0C-mh0"/>
                                     <constraint firstAttribute="width" constant="240" id="dlP-Zq-eqC"/>
@@ -33,9 +34,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xpA-Gk-eLz" firstAttribute="centerY" secondItem="a4t-1B-Lqe" secondAttribute="centerY" id="0T1-QA-tyT"/>
-                            <constraint firstItem="xpA-Gk-eLz" firstAttribute="centerX" secondItem="a4t-1B-Lqe" secondAttribute="centerX" id="bUy-hP-aIh"/>
+                            <constraint firstItem="xpA-Gk-eLz" firstAttribute="centerX" secondItem="Byh-ba-GX8" secondAttribute="centerX" id="bUy-hP-aIh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DgV-8t-oDf"/>
+                        <viewLayoutGuide key="safeArea" id="Byh-ba-GX8"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>

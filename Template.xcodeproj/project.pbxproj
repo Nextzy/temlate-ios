@@ -25,7 +25,6 @@
 		37CCB7C61F877961003DE68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CCB7BB1F877961003DE68D /* Assets.xcassets */; };
 		37CCB7C71F877961003DE68D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CCB7C11F877961003DE68D /* ViewController.swift */; };
 		37DC693D1F8F2A57000FB64A /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC693C1F8F2A57000FB64A /* LaunchScreenViewController.swift */; };
-		37DC693F1F8F4324000FB64A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DC693E1F8F4324000FB64A /* Colors.xcassets */; };
 		37DC69411F8F5739000FB64A /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC69401F8F5739000FB64A /* BaseViewModel.swift */; };
 		37DC69431F8F5787000FB64A /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */; };
 		37E5D6421F8F720400985A87 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5D6411F8F720400985A87 /* APIManager.swift */; };
@@ -56,7 +55,6 @@
 		37CCB7BB1F877961003DE68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CCB7C11F877961003DE68D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37DC693C1F8F2A57000FB64A /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
-		37DC693E1F8F4324000FB64A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		37DC69401F8F5739000FB64A /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		37DC69421F8F5787000FB64A /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		37E5D6411F8F720400985A87 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				375ABE8E1F877FFA00D0AC94 /* Localizable */,
 				37CCB7B61F877961003DE68D /* Storyboard */,
 				37CCB7BB1F877961003DE68D /* Assets.xcassets */,
-				37DC693E1F8F4324000FB64A /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -303,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DC693F1F8F4324000FB64A /* Colors.xcassets in Resources */,
 				375ABE941F87802200D0AC94 /* Main.storyboard in Resources */,
 				375ABE961F87803700D0AC94 /* LaunchScreen.storyboard in Resources */,
 				375ABE921F877FFA00D0AC94 /* Localizable.strings in Resources */,
@@ -357,14 +353,12 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -534,7 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEV";
 				PRODUCT_BUNDLE_IDENTIFIER = com.template;
@@ -554,7 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PPXZRVXVT;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DPROD";
 				PRODUCT_BUNDLE_IDENTIFIER = com.template;
