@@ -43,7 +43,7 @@ class RealmManager {
     
     private func getKey() -> Data {
         // Identifier for our keychain entry - should be unique for your application
-        let keychainIdentifier = "io.realm.encryptionKeyForMyAIS"
+        let keychainIdentifier = "io.realm.encryptionKeyForRocket"
         let keychainIdentifierData = keychainIdentifier.data(using: String.Encoding.utf8, allowLossyConversion: false)!
         
         // First check in the keychain for an existing key
