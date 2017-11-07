@@ -7,4 +7,6 @@ target 'Rocket' do
     pod 'RxCocoa'
     pod 'Hero'
     pod 'SwiftLint'
+    pod 'RealmSwift'
+    
 end

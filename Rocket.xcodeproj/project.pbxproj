@@ -31,6 +31,7 @@
 		37CD7C3A1FB028F500814A6D /* RocketColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7C391FB028F500814A6D /* RocketColor.swift */; };
 		37CD7C3C1FB0294700814A6D /* RocketFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7C3B1FB0294700814A6D /* RocketFont.swift */; };
 		37CD7C3E1FB02CBB00814A6D /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7C3D1FB02CBB00814A6D /* UIButtonExtensions.swift */; };
+		37CD7C441FB161D700814A6D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD7C431FB161D600814A6D /* RealmManager.swift */; };
 		37E5D6421F8F720400985A87 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5D6411F8F720400985A87 /* APIManager.swift */; };
 		85496E3204FE385D7863A55E /* Pods_Rocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5112DDC80AC9827924121F29 /* Pods_Rocket.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		37CD7C391FB028F500814A6D /* RocketColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketColor.swift; sourceTree = "<group>"; };
 		37CD7C3B1FB0294700814A6D /* RocketFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFont.swift; sourceTree = "<group>"; };
 		37CD7C3D1FB02CBB00814A6D /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		37CD7C431FB161D600814A6D /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		37E5D6411F8F720400985A87 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		5112DDC80AC9827924121F29 /* Pods_Rocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F0C80C7FB36179047FAA7D /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		375ABE721F877EB300D0AC94 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				37CD7C421FB161D600814A6D /* RealmManager */,
 				37E5D6401F8F71E000985A87 /* APIManager */,
 				37CD7C211FB026EA00814A6D /* RocketUI */,
 				37CD7C1E1FB0269800814A6D /* LocationManager */,
@@ -238,6 +241,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		37CD7C421FB161D600814A6D /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				37CD7C431FB161D600814A6D /* RealmManager.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
 		37E5D6401F8F71E000985A87 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,14 +390,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Rocket/Pods-Rocket-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,6 +430,7 @@
 				376734E21F988815002DA4A8 /* UIColorExtensions.swift in Sources */,
 				37CD7C3C1FB0294700814A6D /* RocketFont.swift in Sources */,
 				37CCB7C21F877961003DE68D /* AppDelegate.swift in Sources */,
+				37CD7C441FB161D700814A6D /* RealmManager.swift in Sources */,
 				37CD7C331FB028C700814A6D /* BaseTabBarViewController.swift in Sources */,
 				37A8FC6E1F891D6B0097F475 /* String+LocalizedBundleTableName.swift in Sources */,
 				37A8FC651F88FF670097F475 /* UIFontExtensions.swift in Sources */,
