@@ -100,10 +100,10 @@ class RocketButton: UIButton {
             if (isTextButton) {
                 let title = key.localized()
                 self.setTitle(title, for: .normal)
-                self.fadeIn()
+                self.fadeAnimation()
             }
             else if (isImageButton) {
-                self.fadeIn(duration: 0.25, delay: 0.0, completion: { (_) in
+                self.fadeAnimation(duration: 0.25, delay: 0.0, completion: { (_) in
                     let imageName = key.localized()
                     let image = UIImage(named: imageName)
                     self.setImage(image, for: .normal)

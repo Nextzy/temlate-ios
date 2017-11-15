@@ -14,7 +14,7 @@ class RocketLabel: UILabel {
     @IBInspectable var fontSize: String?
     
     @IBInspectable var key: String?
-    
+    @IBInspectable var isUnderLine: Bool = false
     public var _labelStyle: MyAISLabelStyle {
         if let labelStyle = self.labelStyle {
             if labelStyle.lowercased().contains("topic") {
@@ -70,7 +70,10 @@ class RocketLabel: UILabel {
         
         if let key = self.key {
             self.text = key.localized()
-            self.fadeIn()
+            if self.isUnderLine {
+                self.underLine()
+            }
+            self.fadeAnimation()
         }
     }
     

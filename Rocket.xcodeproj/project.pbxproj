@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373218C11FBCAC5E00D990CC /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373218C01FBCAC5E00D990CC /* UILabelExtensions.swift */; };
 		375ABE921F877FFA00D0AC94 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE8F1F877FFA00D0AC94 /* Localizable.strings */; };
 		375ABE941F87802200D0AC94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE931F87802200D0AC94 /* Main.storyboard */; };
 		375ABE961F87803700D0AC94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375ABE951F87803700D0AC94 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		373218C01FBCAC5E00D990CC /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		375ABE901F877FFA00D0AC94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		375ABE911F877FFA00D0AC94 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		375ABE931F87802200D0AC94 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				377FE8981F9630C0000B9E93 /* UIViewExtensions.swift */,
 				376734E11F988815002DA4A8 /* UIColorExtensions.swift */,
 				37CD7C3D1FB02CBB00814A6D /* UIButtonExtensions.swift */,
+				373218C01FBCAC5E00D990CC /* UILabelExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				37A8FC6C1F891D6B0097F475 /* String+LocalizeTableName.swift in Sources */,
 				377FE8991F9630C0000B9E93 /* UIViewExtensions.swift in Sources */,
 				37CD7C361FB028C700814A6D /* BaseViewModel.swift in Sources */,
+				373218C11FBCAC5E00D990CC /* UILabelExtensions.swift in Sources */,
 				37CD7C3E1FB02CBB00814A6D /* UIButtonExtensions.swift in Sources */,
 				37CD7C201FB026AB00814A6D /* LocationManager.swift in Sources */,
 				37CD7C2F1FB028C700814A6D /* ViewController.swift in Sources */,
